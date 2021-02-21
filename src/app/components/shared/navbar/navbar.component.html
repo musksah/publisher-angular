@@ -1,0 +1,18 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <h1>Librería</h1>
+        <span class="menu-spacer"></span>
+        <div>
+            <a mat-button [routerLink]="'/searcher'"> Books </a>
+        </div>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+            <form class="example-form">
+                <mat-form-field class="example-full-width">
+                  <mat-label>Buscar libro...</mat-label>
+                  <input type="text" value="" matInput (keyup)="onKey($event)">
+                  <mat-icon matSuffix>search</mat-icon>
+                </mat-form-field>
+              </form>
+        </button>
+    </mat-toolbar-row>
+</mat-toolbar>
